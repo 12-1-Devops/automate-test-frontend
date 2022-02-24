@@ -32,13 +32,13 @@ jobs:
         with:
           context: .
           push: true
-          tags: popbobkok5019/Lab12_2:latest
+          tags: popbobkok5019/lab12_2:latest
       -
         name: prepare the docker-compose run
         run: |
-              mkdir Lab12_2
-              cp docker-compose.yml Lab12_2/docker-compose.yml
-              cd Lab12_2
+              mkdir lab12_2
+              cp docker-compose.yml lab12_2/docker-compose.yml
+              cd lab12_2
               docker-compose -H ${{ secrets.HOST_SERVER }} down
               docker-compose -H ${{ secrets.HOST_SERVER }} pull
               docker-compose -H ${{ secrets.HOST_SERVER }} up -d

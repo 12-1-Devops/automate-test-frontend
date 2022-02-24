@@ -5,6 +5,6 @@ services:
     ports:
       - "8091:8080"
   frontend:
-    image: popbobkok5019/Lab12_2:latest
+    image: popbobkok5019/lab12_2:latest
     ports:
       - "8092:80"
